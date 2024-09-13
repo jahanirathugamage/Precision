@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <!---->
+    <link rel="stylesheet" href="pharmacy.css">
+
+    <!--Imported fonts and icon links------------------------------------->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixcon@2.5.0/fonts/remixicon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <!--Favicon links------------------------------------------>
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/site.webmanifest">
+    <link rel="mask-icon" href="Favicon/safari-pinned-tab.svg" color="#6f6f6f">
+    <meta name="msapplication-TileColor" content="#00aba9">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Description that appears when website is searched on a search engine----------------------->
+    <meta name="Precision Hospitals" content="Precision Hospital provides comprehensive healthcare services, including emergency care and specialist consultations, with a focus on patient-centered care and advanced medical treatments.">
+</head>
+<body>
+
+    <!-- The Header Section -->
+    <header>
+        <div class="top-bar">
+            <img class="logo" src="Images/logo.svg" alt="Precision Hospitals">
+
+            <!-- The search bar -->
+            <form>
+                <div class="search">
+                    <input class="search-input" type="search" placeholder="Search">
+                    <div class="search-icon material-symbols-outlined">search</div>
+                </div>
+            </form>
+
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></i></label>            
+        </div>
+
+        <!-- The navigation bar and buttons -->
+        <nav>
+            <input type="checkbox" id="check">
+            <ul class="navbar" role="navigation">
+                <span class="menu">
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./doctors.html">Doctors</a></li>
+                    <li><a href="./appointment.html">Appointments</a></li>
+                    <li><a href="./pharmacy.html">Pharmacy</a></li>
+                    <li><a href="./login.html"><button>Login</button></a></li>
+                    <li><a href="./registration.html"><button>Sign Up</button></a></li>
+                </span>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="book">
+            <div class="container">
+                <h3>Medication Order</h3>
+                <form action="#" class="form">
+                    <div class="input-box">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter full name" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Date of birth</label>
+                        <input type="date" required>
+                    </div>
+            
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Contact Number</label>
+                            <input type="text" placeholder="Enter contact number" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Email Address</label>
+                            <input type="text" placeholder="Enter email address" required>
+                        </div>
+                    </div>
+
+                    <p>Method</p>
+                    <div class="methods">
+                        <div class="method">
+                            <input type="radio" id="delivery-option" name="delivery-choice">
+                            <label for="delivery-choice">Delivery</label>
+                        </div>
+                        <div class="method">
+                            <input type="radio" id="pickup-option" name="pickup-choice">
+                            <label for="pickup-choice">Pick Up</label>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <label>Address</label>
+                        <input type="text" placeholder="Enter address" required>
+                    </div>
+                    
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Branch</option>
+                            <option>Precision Healthcare</option>
+                            <option>Precision Surgical Center</option>
+                            <option>Precision Children's Hospital</option>
+                        </select>
+                    </div>
+
+                    <p>Medicine</p>
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Medicine</option>
+                            <option>Acetaminophen</option>
+                            <option>Ibuprofen</option>
+                            <option>Amoxicillin</option>
+                            <option>Metformin</option>
+                            <option>Lisinopril</option>
+                            <option>Atorvastatin</option>
+                            <option>Omeprazole</option>
+                            <option>Simvastatin</option>
+                            <option>Losartan</option>
+                            <option>Albuterol</option>
+                            <option>Gabapentin</option>
+                            <option>Levothyroxine</option>
+                            <option>Amlodipine</option>
+                            <option>Hydrochlorothiazide</option>
+                            <option>Citalopram</option>
+                            <option>Fluoxetine</option>
+                            <option>Prednisone</option>
+                            <option>Metoprolol</option>
+                            <option>Aspirin</option>
+                            <option>Furosemide</option>
+                            <option>Montelukast</option>
+                            <option>Zolpidem</option>
+                            <option>Tramadol</option>
+                            <option>Clopidogrel</option>
+                            <option>Escitalopram</option>
+                            <option>Azithromycin</option>
+                            <option>Sildenafil</option>
+                            <option>Warfarin</option>
+                            <option>Meloxicam</option>
+                            <option>Cephalexin</option>
+                            <option>Hydrocodone</option>
+                            <option>Propranolol</option>
+                            <option>Alprazolam</option>
+                            <option>Sertraline</option>
+                            <option>Insulin Glargine</option>
+                            <option>Trazodone</option>
+                            <option>Clindamycin</option>
+                            <option>Doxycycline</option>
+                            <option>Diazepam</option>
+                            <option>Ciprofloxacin</option>
+                            <option>Allopurinol</option>
+                            <option>Bupropion</option>
+                            <option>Naproxen</option>
+                            <option>Lorazepam</option>
+                            <option>Morphine</option>
+                            <option>Famotidine</option>
+                            <option>Carvedilol</option>
+                            <option>Duloxetine</option>
+                            <option>Spironolactone</option>
+                            <option>Ranitidine</option>
+                        </select>
+                    </div>
+                    <p>Other</p>
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Dosage</option>
+                            <option>5 mg</option>
+                            <option>10 mg</option>
+                            <option>20 mg</option>
+                            <option>25 mg</option>
+                            <option>50 mg</option>
+                            <option>75 mg</option>
+                            <option>100 mg</option>
+                            <option>200 mg</option>
+                            <option>250 mg</option>
+                            <option>500 mg</option>
+                            <option>600 mg</option>
+                            <option>800 mg</option>
+                            <option>1 g</option>
+                            <option>2 g</option>
+                            <option>5 g</option>
+                            <option>10 g</option>
+                            <option>50 mcg</option>
+                            <option>75 mcg</option>
+                            <option>100 mcg</option>
+                            <option>125 mcg</option>
+                            <option>150 mcg</option>
+                            <option>0.5 mg</option>
+                            <option>1 mg</option>
+                            <option>2 mg</option>
+                            <option>5 mg/5 ml</option>
+                            <option>10 mg/5 ml</option>
+                            <option>20 mg/5 ml</option>
+                            <option>50 mg/ml</option>
+                            <option>100 mg/ml</option>
+                            <option>200 mg/ml</option>
+                            <option>10 units</option>
+                            <option>20 units</option>
+                            <option>50 units</option>
+                            <option>100 units</option>
+                            <option>250 units</option>
+                            <option>500 units</option>
+                            <option>1,000 units</option>
+                            <option>5 mL</option>
+                            <option>10 mL</option>
+                            <option>15 mL</option>
+                            <option>20 mL</option>
+                            <option>30 mL</option>
+                            <option>50 mL</option>
+                            <option>100 mL</option>
+                            <option>250 mL</option>
+                            <option>500 mL</option>
+                            <option>1 L</option>
+                            <option>2 L</option>
+                            <option>5 L</option>
+                            <option>10 L</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label>Quantity</label>
+                        <input type="text" placeholder="Enter quality" required>
+                    </div>
+                   
+                    <p>Add Medicine</p>
+                    <div class="addition">
+                        <div class="add">
+                            <input type="radio" id="option-yes" name="add-meds">
+                            <label for="add-meds">Yes</label>
+                        </div>
+                        <div class="add">
+                            <input type="radio" id="option-no" name="dont-add-meds">
+                            <label for="dont-add-meds">No</label>
+                        </div>
+                    </div>
+
+                    <div class="select-box">
+                        <select>
+                            <option hidden>Medicine</option>
+                            <option>Acetaminophen</option>
+                            <option>Ibuprofen</option>
+                            <option>Amoxicillin</option>
+                            <option>Metformin</option>
+                            <option>Lisinopril</option>
+                            <option>Atorvastatin</option>
+                            <option>Omeprazole</option>
+                            <option>Simvastatin</option>
+                            <option>Losartan</option>
+                            <option>Albuterol</option>
+                            <option>Gabapentin</option>
+                            <option>Levothyroxine</option>
+                            <option>Amlodipine</option>
+                            <option>Hydrochlorothiazide</option>
+                            <option>Citalopram</option>
+                            <option>Fluoxetine</option>
+                            <option>Prednisone</option>
+                            <option>Metoprolol</option>
+                            <option>Aspirin</option>
+                            <option>Furosemide</option>
+                            <option>Montelukast</option>
+                            <option>Zolpidem</option>
+                            <option>Tramadol</option>
+                            <option>Clopidogrel</option>
+                            <option>Escitalopram</option>
+                            <option>Azithromycin</option>
+                            <option>Sildenafil</option>
+                            <option>Warfarin</option>
+                            <option>Meloxicam</option>
+                            <option>Cephalexin</option>
+                            <option>Hydrocodone</option>
+                            <option>Propranolol</option>
+                            <option>Alprazolam</option>
+                            <option>Sertraline</option>
+                            <option>Insulin Glargine</option>
+                            <option>Trazodone</option>
+                            <option>Clindamycin</option>
+                            <option>Doxycycline</option>
+                            <option>Diazepam</option>
+                            <option>Ciprofloxacin</option>
+                            <option>Allopurinol</option>
+                            <option>Bupropion</option>
+                            <option>Naproxen</option>
+                            <option>Lorazepam</option>
+                            <option>Morphine</option>
+                            <option>Famotidine</option>
+                            <option>Carvedilol</option>
+                            <option>Duloxetine</option>
+                            <option>Spironolactone</option>
+                            <option>Ranitidine</option>
+                        </select>
+
+                    <div class="input-box">
+                        <label>Prescription Details</label>
+                        <input type="text" placeholder="Enter extra details of Prescription" required>
+                    </div>
+                    <div class="confirmation">
+                        <button>Confirm</button>
+                        <button>Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </section>            
+    </main>
+
+    <!--The Footer------------------------------------------------------------------------------------------------>
+    <footer>
+        <div class="sec1">
+            <img class="logo" src="Images/logo.svg" alt="Precision Hospitals">
+            <h5>Contact Us</h5>
+
+            <div class="column">
+                <div class="icon-container">
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-phone"></i>
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="content">
+                    <p>+94 2581 49253</p>
+                    <p>+94 2280 82031</p>
+                    <p>precision8@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.instagram.com/"><i class='bx bxl-instagram-alt' ></i></i></box-icon></a>
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></box-icon></a>
+                <a href="https://lk.linkedin.com/"><i class='bx bxl-linkedin' ></i></box-icon></a>
+            </div>
+
+            </div>
+        </div>
+
+        <!--Footer Navgiation-------------------------------------------------->
+        <div class="sec2">
+            <h4>Explore</h4>
+            <a class="footlinks" href="index.html">Home</a>
+            <a class="footlinks" href="aboutus.html">About Us</a>
+            <a class="footlinks" href="services.html">Services</a>
+            <a class="footlinks" href="doctors.html">Doctors</a>
+            <a class="footlinks" href="appointment.html">Appointments</a>
+            <a class="footlinks" href="pharmacy.html">Pharmacy</a>
+        </div>
+
+        <!--Support Links------------------------------------------------------>
+        <div class="sec3">
+            <h4>Support</h4>
+            <a class="footlinks" href="index.html">FAQ</a>
+            <a class="footlinks" href="aboutus.html">Contact Us</a>
+            <a class="footlinks" href="aboutus.html">Privacy Policies</a>
+        </div>
+
+        <!--Quick Services----------------------------------------------------->
+        <div class="sec4">
+            <h4>Services</h4>
+            <a class="footlinks" href="aboutus.html">Emergencies</a>
+            <a class="footlinks" href="appointment.html">Consultation</a>
+            <a class="footlinks" href="pharmacy.html">Pharmacutical</a>
+        </div>
+
+        <!-- References used: 
+         1) Pinterest (n.d.). [hero-bg.jpg] https://i.pinimg.com/564x/92/05/79/92057909d0531b1093302e91c9e94f8d.jpg
+         2) 
+         3)
+         4) -->
+
+    </footer>
+
+    <!--Copywrite statement---------------------------------------------------->
+    <div class="sec5">
+        <p>Copyright © 2024 Precision Healthcare. All rights reserved.</p>
+    </div>
+</body>
+</html>
